@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { Button, Card, Col, Form, Row } from 'react-bootstrap';
+import { Button, Card, Col, Container, Form, Row } from 'react-bootstrap';
 import {useNavigate } from 'react-router-dom';
 
 function FirstPage ({setNoOfPlayers, setTarget, setAutoPlayer}) {
@@ -65,7 +65,7 @@ const handleAutoPlayerChange = (event) => {
 };
 
 return (
-<>
+<Container>
   <Row className="justify-content-center">
     <Col md={6}>
       <Card>
@@ -158,7 +158,7 @@ Push your luck, outplay your rival, and hit the target with style!
       </Col>
   </Row>
 
-</>
+</Container>
 
 )
 

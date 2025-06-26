@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button, Col, Form, Row } from "react-bootstrap";
+import { Button, Col, Container, Form, Row } from "react-bootstrap";
 import {useNavigate } from 'react-router-dom';
 import { useEffect } from "react";
 
@@ -145,12 +145,12 @@ const handleAdd = (forcedValue = null) => {
   }
 
   return (
-    <>
+    <Container >
       <h3 className="text-center">🎯 Target: {target}</h3>
       <h4 className="text-center">Total Score: {totalScore}</h4>
 
       <Row className="justify-content-center">
-        <Col md={6}>
+        <Col md={6} >
           {gameOver ? (
             <div>
             <h2>💥 Game Over! You went over the target. </h2> 
@@ -192,7 +192,7 @@ const handleAdd = (forcedValue = null) => {
           )}
         </Col>
       </Row>
-    </>
+    </Container>
   );
 }
 
